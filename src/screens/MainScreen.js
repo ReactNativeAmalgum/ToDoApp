@@ -21,7 +21,6 @@ import {
 import CheckBox from '@react-native-community/checkbox';
 import imagePath from '../utensils/imagePath';
 import { ThemedButton } from 'react-native-really-awesome-button';
-import navStrings from '../utensils/navStrings';
 import FilterModal from '../components/components';
 
 const { width, height } = Dimensions.get('window'); // Get screen dimensions
