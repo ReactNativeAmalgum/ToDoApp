@@ -1,9 +1,9 @@
 
+// This file is for uplading json file to firestore
 
 const admin = require('firebase-admin');
 const fs = require('fs');
 
-// Replace with the path to your service account key
 const serviceAccount = require('./serviceAccountKey.json');
 
 // Initialize the Firebase Admin SDK
@@ -22,7 +22,6 @@ const data = JSON.parse(
 async function uploadData() {
   const batch = db.batch();
 
-  // Assuming each document in your JSON array has an 'id' field
   data.forEach(doc => {
     if (doc.id) {
       // Check if the 'id' field exists

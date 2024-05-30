@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 export default function Routes() {
   return (
       <NavigationContainer>
-      <Provider store={store}>
+      <Provider store={store}>{/* providing store globaly */}
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name={"MainScreen"} component={MainScreen} />
           <Stack.Screen name={"AddTodoScreen"} component={AddTodoScreen} />

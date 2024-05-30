@@ -25,11 +25,6 @@ import FilterModal from '../components/components';
 
 const { width, height } = Dimensions.get('window'); // Get screen dimensions
 
-const FilterButton = ({ title, onPress }) => (
-  <TouchableOpacity style={styles.filterButton} onPress={onPress}>
-    <Text>{title}</Text>
-  </TouchableOpacity>
-);
 
 export default function MainScreen({ navigation }) {
   const dispatch = useDispatch(); // Initialize dispatch function from redux
@@ -297,15 +292,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   filterModal: {
-    width: 300, // Adjust width as needed
-    height: 220, // Adjust height as needed
+    width: 300, 
+    height: 220, 
     backgroundColor: 'white',
     borderRadius: 10,
     padding: 20,
-    alignSelf: 'center', // Center the modal horizontally
+    alignSelf: 'center', 
     top: 300,
   },
 });
